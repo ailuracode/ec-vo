@@ -1,0 +1,17 @@
+{
+    "name": "ailuracode/ec-validator",
+    "autoload": {
+        "psr-4": {
+            "AiluraCode\\EcValidator\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Pablo Santiago Guerra",
+            "email": "livesanty_@hotmail.com"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^10.5"
+    }
+}
