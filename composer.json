@@ -1,8 +1,16 @@
 {
     "name": "ailuracode/ec-validator",
+    "require": {
+        "php": "^8.3"
+    },
     "autoload": {
         "psr-4": {
             "AiluraCode\\EcValidator\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AiluraCode\\EcValidator\\Tests\\": "tests/"
         }
     },
     "authors": [
@@ -12,6 +20,18 @@
         }
     ],
     "require-dev": {
-        "phpunit/phpunit": "^10.5"
-    }
+        "pestphp/pest": "^4.0"
+    },
+    "scripts": {
+        "test": "pest --configuration tests/Pest.xml",
+        "test:unit": "pest --configuration tests/Pest.xml",
+        "test:coverage": "pest --configuration tests/Pest.xml --coverage"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        },
+        "sort-packages": true
+    },
+    "minimum-stability": "stable"
 }
