@@ -23,9 +23,9 @@
         "pestphp/pest": "^4.0"
     },
     "scripts": {
-        "test": "pest",
-        "test:unit": "pest",
-        "test:coverage": "pest --coverage"
+        "test": "pest --configuration tests/Pest.xml",
+        "test:unit": "pest --configuration tests/Pest.xml",
+        "test:coverage": "pest --configuration tests/Pest.xml --coverage"
     },
     "config": {
         "allow-plugins": {
